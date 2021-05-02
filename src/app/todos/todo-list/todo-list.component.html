@@ -1,0 +1,7 @@
+<ul class="todo-list">
+    <!-- El filtroActual le envía el filtro al pipe -->
+    <app-todo-item 
+        *ngFor="let todo of todos | filtroTodo:filtroActual" 
+        [todo]="todo" >
+    </app-todo-item>
+</ul>
